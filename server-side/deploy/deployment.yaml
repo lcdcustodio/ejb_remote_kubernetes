@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy-ejb-demo-k8s
+  labels:
+    app: ejb-demo-k8s
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ejb-demo-k8s
+  template:
+    metadata:
+      labels:
+        app: ejb-demo-k8s
+    spec:
+      containers:
+      - name: ejb-remote
+        image: ejb_demo_server:latest
+        imagePullPolicy: Never #to run images on local disk
+        ports:
+        - containerPort: 8080
+        - containerPort: 9990        

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: pod-client
+    labels:
+      app: pod-client 
+spec:
+    containers:
+        - name: container-client
+          image: ejb_remote_client:latest
+          imagePullPolicy: Never #to run images on local disk
+          ports:
+            - containerPort: 80

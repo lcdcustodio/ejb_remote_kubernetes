@@ -1,0 +1,3 @@
+com\kubernetes\remote\ejb\server\stateless\LocalHello.class
+com\kubernetes\remote\ejb\server\stateless\HelloBean.class
+com\kubernetes\remote\ejb\server\stateless\RemoteHello.class
