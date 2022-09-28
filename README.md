@@ -23,6 +23,7 @@ First of all, let’s clone the repository and build the application:
 
 ```
     git clone https://github.com/lcdcustodio/ejb_remote_kubernetes.git
+    cd ejb_remote_kubernetes
     # Server Side    
     mvn clean install -f .\server-side\
     # Client Side
@@ -70,7 +71,7 @@ One all of kubernetes resources were created, let's proceed with health check th
     kubectl get rs # get replicaset info
     kubectl get pods -o wide  # get pod info
     kubectl describe service svc-ejb-demo-k8s #endpoint address to load balance
-    kubectl logs -f pod-client #soap script is up and running
+    kubectl logs -f pod-client # check log info
 ```
 
 ------------
