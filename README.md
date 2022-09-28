@@ -75,7 +75,7 @@ One all of kubernetes resources were created, let's procede with health check th
 
 ------------
 
-6- Use Case - EJB invocation from a remote client 
+5- Use Case - EJB invocation from a remote client 
 ===========================
 
 According High Level Desigin session, the main purpose is to demonstrate how to lookup and invoke on EJBs deployed in different Pods from another instance. We have two EJBs for a standalone Client. That's why we take in place the service resource from Kubernets. This component is able to abstract EJBs Pods solving their IP addresses to remote Client. Let's check out through following commands: 
