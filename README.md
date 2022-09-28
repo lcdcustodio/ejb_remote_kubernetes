@@ -61,7 +61,7 @@ Yaml files in charge to create all of kubernetes resources for this demo are ava
 4- Health Check 
 ===========================
 
-One all of kubernetes resources were created, let's procede with health check through the following commands:  
+One all of kubernetes resources were created, let's proceed with health check through the following commands:  
 
 
 ```
@@ -85,17 +85,17 @@ According High Level Desigin session, the main purpose is to demonstrate how to 
     kubectl exec -it  <pod_name> -- bash 
 ```
 - In that case, <pod_name> = pod-client
-- Inside the pod, it is time to the standalone client:
+- Inside the pod, it is time to run the standalone client:
 ```
     java -jar app.jar 
 ```
 - The client output will show up in the cli
-- It is possible also to see logs from EJBs Pods in order to follow invocations from server side perpective:
+- It is possible also to see logs from EJBs Pods in order to follow invocations from server side perspective:
 ```
     kubectl logs -f <pod_name> #pods created from deployment 
  
 ```
-- Running serveral times the Client you will be able to see the service balancing the load between EJBs Pods.
+- Running several times the Client you will be able to see the service balancing the load between EJBs Pods.
 
 ------------
 
